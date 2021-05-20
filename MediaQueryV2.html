@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Media Queries</title>
+    <style>
+      .wrapper {
+        border: 1px solid red;
+        margin-bottom: 5px;
+        padding: 2px;
+      }
+      /* Bootstrap framework utilizes media query */
+      @media only screen and (max-width: 400px) {
+        #div1 {
+          background-color: blue;
+        }
+      }
+      @media only screen and (min-width: 450px) and (max-width: 900px) {
+        #div2 {
+          background-color: pink;
+        }
+      }
+      @media only screen and (min-width: 900px) {
+        #div3 {
+          background-color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1" class="wrapper">blue when screen width less than 400px</div>
+    <div id="div2" class="wrapper">
+      pink when screen width between 450px and 900px
+    </div>
+    <div id="div3" class="wrapper">orange when screen width above 900px</div>
+  </body>
+</html>
