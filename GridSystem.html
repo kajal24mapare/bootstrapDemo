@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Structure</title>
+    <meta name="Viewport" width="screen-width scale=1" />
+    <!-- Get links from https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .col-content {
+        background-color: gray;
+        margin-bottom: 2px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        Grid structure- container
+        row
+        col-*-**
+        8-sm,md,xs,lg
+        12 cols per row
+        eg. col-sm-4: consume 4 columns of row
+        $grid-breakpoints: (xs: 0px, sm: 576px, md: 768px, lg: 992px, xl: 1200px) !default;
+    -->
+
+    <!-- On change to extra small device, cols will appear horizontally -->
+    <div class="container-fluid fl-container">
+      <div class="row">
+        <div class="col">
+          <div class="col-content">Col-content 1</div>
+        </div>
+        <div class="col">
+          <div class="col-content">Col-content 1</div>
+        </div>
+        <div class="col">
+          <div class="col-content">Col-content 1</div>
+        </div>
+        <div class="col">
+          <div class="col-content">Col-content 1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- col-8 consuming size -->
+    <div class="container-fluid fl-container">
+      <div class="row">
+        <div class="col-8">
+          <div class="col-content">Col-content 2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- If you try to consume more than 12 columns -->
+    <!-- Then column will wrap around in next line -->
+    <div class="container-fluid fl-container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="col-content">Col-content 3</div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-content">Col-content 3</div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-content">Col-content 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper(to handle positioning of element such as tooltip) -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
