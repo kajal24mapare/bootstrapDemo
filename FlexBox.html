@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox</title>
+    <meta name="Viewport" width="screen-width scale=1" />
+    <!-- Get links from https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <!-- Utility classes eg: p(padding), mt(margin-top), bg(background) -->
+      <!-- Block flexbox -->
+      <div class="d-flex p-3 mt-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-danger">Flex item 3</div>
+      </div>
+    </div>
+
+    <!-- Inline flexbox -->
+    <div class="container mt-3">
+      <div class="d-flex-inline p-3 mt-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-danger">Flex item 3</div>
+      </div>
+    </div>
+
+    <!-- Vertical Alignment -->
+    <div class="container mt-3">
+      <div class="d-flex flex-column p-3 mt-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-danger">Flex item 3</div>
+      </div>
+    </div>
+
+    <!-- Justify content -->
+    <div class="container mt-3">
+      <div class="d-flex justify-content-end p-3 mt-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-danger">Flex item 3</div>
+      </div>
+    </div>
+
+    <!-- Standard practice to write script below contents -->
+    <!-- JavaScript Bundle with Popper(to handle positioning of element such as tooltip) -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
