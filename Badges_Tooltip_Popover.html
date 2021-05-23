@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Badges, Tooltip and Popover</title>
+    <meta name="Viewport" width="screen-width scale=1" />
+    <!-- Get links from https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Visiter hits
+      <span class="badge badge-primary">436</span>
+    </p>
+    <p>
+      Visiter hits
+      <span class="badge badge-pill badge-danger">436</span>
+    </p>
+
+    <!-- Tooltip -->
+    <a id="tooltip1" href="#" data-toggle="tooltip" title="Tooltip here..."
+      >Hover here!</a
+    >
+
+    <br />
+
+    <!-- Popover -->
+    <a
+      id="popover1"
+      href="#"
+      data-toggle="Popover"
+      data-placement="bottom"
+      title="Popover Title"
+      data-content="Content inside Popover"
+      >Click Me!</a
+    >
+
+    <!-- JavaScript Bundle with Popper(to handle positioning of element such as tooltip) -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#tooltip1").tooltip();
+
+      $(document).ready(function () {
+        $("#popover1").popover();
+      });
+    </script>
+  </body>
+</html>
